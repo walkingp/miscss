@@ -1,0 +1,25 @@
+{
+  "name": "miscss",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Welcome to miscss 👋</h1> <p>   <a href=\"https://miscss.migao.io\" target=\"_blank\">     <img alt=\"Documentation\" src=\"https://img.shields.io/badge/documentation-yes-brightgreen.svg\" />   </a>   <a href=\"#\" target=\"_blank\">     <img alt=\"License: MIT\" src=\"https://img.shields.io/badge/License-MIT-yellow.svg\" />   </a> </p>",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass lib/index.scss index.css",
+    "buildCompact": "sass lib/index.scss index.normal.css --style compact",
+    "buildCompressed ": "sass lib/index.scss index.min.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walkingp/miscss.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/walkingp/miscss/issues"
+  },
+  "homepage": "https://github.com/walkingp/miscss#readme",
+  "dependencies": {
+    "sass": "^1.25.0"
+  }
+}

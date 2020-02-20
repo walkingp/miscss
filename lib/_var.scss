@@ -1,0 +1,99 @@
+$color-blue: #007bff !default;
+$color-indigo: #6610f2 !default;
+$color-purple: #6f42c1 !default;
+$color-pink: #e83e8c !default;
+$color-red: #dc3545 !default;
+$color-orange: #fd7e14 !default;
+$color-yellow: #ffc107 !default;
+$color-green: #28a745 !default;
+$color-teal: #20c997 !default;
+$color-cyan: #17a2b8 !default;
+$color-white: #fff !default;
+$color-grey: #868e96 !default;
+$color-grey-dark: #343a40 !default;
+$color-primary: #007bff !default;
+$color-secondary: #868e96 !default;
+$color-success: #28a745 !default;
+$color-info: #17a2b8 !default;
+$color-warning: #ffc107 !default;
+$color-danger: #dc3545 !default;
+$color-light: #f8f9fa !default;
+$color-dark: #343a40 !default;
+$color-black: #000 !default;
+
+$color-title: #17233d !default;
+$color-content: #515a6e !default;
+$color-disabled: #c5c8ce !default;
+
+$bg-grey: #f2f2f2 !default;
+$bg-white: #ffffff !default;
+$bg-black: #393d49 !default;
+
+$color-border: #dcdfe6 !default;
+
+$colors: (
+  "white": $color-white,
+  "black": $color-black,
+  "grey": $color-grey,
+  "green": $color-green,
+  "blue": $color-blue,
+  "yellow": $color-yellow,
+  "red": $color-red,
+  "title": $color-title,
+  "content": $color-content,
+  "disabled": $color-disabled
+) !default;
+
+$border-colors: (
+  "white": $color-white,
+  "black": $color-black,
+  "grey": $color-border,
+  "green": $color-green,
+  "blue": $color-blue,
+  "yellow": $color-yellow,
+  "red": $color-red
+) !default;
+
+$base-font-size: 1rem; // 14px
+
+$font-sizes: (
+  xs: 0.7143,
+  sm: 0.8571,
+  md: 0.9286,
+  lg: 1,
+  xl: 1.1429,
+  xxl: 1.2857
+);
+
+$flex-attr: (
+  start: flex-start,
+  end: flex-end,
+  center: flex-end,
+  stretch: stretch
+);
+
+$base-spacing-size: 1rem; // 14px
+$directions: (
+  "t": "top",
+  "b": "bottom",
+  "l": "left",
+  "r": "right"
+);
+$dimensions: (
+  "p": "padding",
+  "m": "margin"
+);
+$spacing-sizes: (
+  xs: 0,
+  sm: 0.25,
+  md: 0.5,
+  lg: 1,
+  xl: 1.5,
+  xxl: 3
+);
+
+$cursor-type: default, auto, crosshair, pointer, move, text, wait, help;
+$display-type: inherit, none, inline, inline-block, block, table, inline-table,
+  table-cell;
+$position-type: static, relative, absolute, fixed, sticky;
+$white-space-type: normal, nowrap, pre, pre-wrap, pre-line;
