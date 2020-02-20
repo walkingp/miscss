@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "sass lib/index.scss index.css",
+    "doc": "docsify serve ./docs",
     "buildCompact": "sass lib/index.scss index.normal.css --style compact",
     "buildCompressed ": "sass lib/index.scss index.min.css --style compressed"
   },
