@@ -319,6 +319,10 @@ textarea {
 }
 
 /* link */
+.white {
+  color: #fff;
+}
+
 .link-white {
   color: #fff;
   text-decoration: none;
@@ -327,6 +331,10 @@ textarea {
 .link-white:hover, .link-white:active, .link-white:focus {
   color: #e6e6e6;
   text-decoration: underline;
+}
+
+.black {
+  color: #000;
 }
 
 .link-black {
@@ -339,6 +347,10 @@ textarea {
   text-decoration: underline;
 }
 
+.grey {
+  color: #868e96;
+}
+
 .link-grey {
   color: #868e96;
   text-decoration: none;
@@ -347,6 +359,10 @@ textarea {
 .link-grey:hover, .link-grey:active, .link-grey:focus {
   color: #6c757d;
   text-decoration: underline;
+}
+
+.green {
+  color: #28a745;
 }
 
 .link-green {
@@ -359,6 +375,10 @@ textarea {
   text-decoration: underline;
 }
 
+.blue {
+  color: #007bff;
+}
+
 .link-blue {
   color: #007bff;
   text-decoration: none;
@@ -367,6 +387,10 @@ textarea {
 .link-blue:hover, .link-blue:active, .link-blue:focus {
   color: #0062cc;
   text-decoration: underline;
+}
+
+.yellow {
+  color: #ffc107;
 }
 
 .link-yellow {
@@ -379,6 +403,10 @@ textarea {
   text-decoration: underline;
 }
 
+.red {
+  color: #dc3545;
+}
+
 .link-red {
   color: #dc3545;
   text-decoration: none;
@@ -387,6 +415,10 @@ textarea {
 .link-red:hover, .link-red:active, .link-red:focus {
   color: #bd2130;
   text-decoration: underline;
+}
+
+.title {
+  color: #17233d;
 }
 
 .link-title {
@@ -399,6 +431,10 @@ textarea {
   text-decoration: underline;
 }
 
+.content {
+  color: #515a6e;
+}
+
 .link-content {
   color: #515a6e;
   text-decoration: none;
@@ -407,6 +443,10 @@ textarea {
 .link-content:hover, .link-content:active, .link-content:focus {
   color: #3b4251;
   text-decoration: underline;
+}
+
+.disabled {
+  color: #c5c8ce;
 }
 
 .link-disabled {
@@ -517,7 +557,7 @@ textarea {
 .flex.column {
   flex-direction: column;
 }
-.flex .flex-wrap {
+.flex.flex-wrap {
   flex-wrap: wrap;
 }
 .flex .flex-none {
@@ -532,28 +572,28 @@ textarea {
 .flex.space-around {
   justify-content: space-around;
 }
-.flex .align-start {
+.flex.align-start {
   align-items: flex-start;
 }
-.flex .justify-start {
+.flex.justify-start {
   justify-content: flex-start;
 }
-.flex .align-end {
+.flex.align-end {
   align-items: flex-end;
 }
-.flex .justify-end {
+.flex.justify-end {
   justify-content: flex-end;
 }
-.flex .align-center {
-  align-items: flex-end;
+.flex.align-center {
+  align-items: center;
 }
-.flex .justify-center {
-  justify-content: flex-end;
+.flex.justify-center {
+  justify-content: center;
 }
-.flex .align-stretch {
+.flex.align-stretch {
   align-items: stretch;
 }
-.flex .justify-stretch {
+.flex.justify-stretch {
   justify-content: stretch;
 }
 
@@ -1132,6 +1172,37 @@ textarea {
 
 .lineheight_9 {
   line-height: 9em;
+}
+
+/* h1-h6 */
+h1,
+.h1 {
+  font-size: 3rem;
+}
+
+h2,
+.h2 {
+  font-size: 2.6rem;
+}
+
+h3,
+.h3 {
+  font-size: 2.2rem;
+}
+
+h4,
+.h4 {
+  font-size: 1.8rem;
+}
+
+h5,
+.h5 {
+  font-size: 1.4rem;
+}
+
+h6,
+.h6 {
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -4,10 +4,10 @@
   "description": "<h1 align=\"center\">Welcome to miscss 👋</h1> <p>   <a href=\"https://miscss.migao.io\" target=\"_blank\">     <img alt=\"Documentation\" src=\"https://img.shields.io/badge/documentation-yes-brightgreen.svg\" />   </a>   <a href=\"#\" target=\"_blank\">     <img alt=\"License: MIT\" src=\"https://img.shields.io/badge/License-MIT-yellow.svg\" />   </a> </p>",
   "main": "index.js",
   "scripts": {
-    "build": "sass lib/index.scss index.css",
+    "build": "sass lib/index.scss dist/index.css",
     "doc": "docsify serve ./docs",
-    "buildCompact": "sass lib/index.scss index.normal.css --style compact",
-    "buildCompressed ": "sass lib/index.scss index.min.css --style compressed"
+    "buildCompact": "sass lib/index.scss dist/index.normal.css --style compact",
+    "buildCompressed ": "sass lib/index.scss dist/index.min.css --style compressed"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/walkingp/miscss#readme",
   "dependencies": {
+    "i18n": "^0.8.5",
+    "prism": "^4.1.2",
     "sass": "^1.25.0"
   }
 }

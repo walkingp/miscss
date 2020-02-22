@@ -58,6 +58,9 @@
 
 /* link */
 @each $name, $color in $colors {
+  .#{$name} {
+    color: $color;
+  }
   .link-#{$name} {
     color: $color;
     text-decoration: none;
@@ -129,7 +132,7 @@
   &.column {
     flex-direction: column;
   }
-  .flex-wrap {
+  &.flex-wrap {
     flex-wrap: wrap;
   }
   .flex-none {
@@ -145,10 +148,10 @@
     justify-content: space-around;
   }
   @each $key, $value in $flex-attr {
-    .align-#{$key} {
+    &.align-#{$key} {
       align-items: $value;
     }
-    .justify-#{$key} {
+    &.justify-#{$key} {
       justify-content: $value;
     }
   }
@@ -218,5 +221,13 @@
 @for $i from 0 to 10 {
   .lineheight_#{$i} {
     line-height: #{$i}em;
+  }
+}
+
+/* h1-h6 */
+@for $i from 1 to 7 {
+  h#{$i},
+  .h#{$i} {
+    font-size: #{3- (2/5 * ($i - 1))}rem;
   }
 }
