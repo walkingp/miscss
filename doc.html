@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MisCss</title>
+    <link rel="shortcut icon" href="./example/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./dist/index.css" />
+    <link rel="stylesheet" href="./example/prism/prism.css" />
+    <script src="./node_modules/prism/lib/index.js"></script>
+    <style>
+      body {
+        line-height: 1.8;
+      }
+      .hero {
+        background-color: #fff;
+        height: 200px;
+      }
+      .logo{
+          width: 6rem;
+          height: 6rem;
+      }
+      .link a{
+        color: #0EB2FF;
+        padding: 0 1rem;
+      }
+
+      .container {
+        margin: 2rem auto;
+        max-width: 80rem;
+      }
+      .content {
+        margin: 1rem 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="hero flex column align-center justify-center">
+      <h1 class="flex align-center justify-center"><img class="logo" src="./example/logo.svg" alt=""> MisCss</h1>
+      <p class="content">一个简单的CSS/SCSS库</p>
+    </section>
+    <section class="flex align-center justify-center link">
+        <a href="http://www.github.com/walkingp/miscss" target="_blank">github</a>
+        <a href="http://www.github.com/walkingp/MUI" target="_blank">MUI</a>
+    </section>
+    <section class="container margin-auto">
+      <h5>安装和引入</h5>
+      <p class="content">
+        引入dist文件夹下miscss.min.css或者直接引用.scss文件
+      </p>
+      <h5>使用</h5>
+      <section class="content">
+        使用对应的类名；如需要使用自定义主题，可直接修改_var.scss
+      </section>
+      <h5>颜色和单位</h5>
+      <div class="content">
+        <pre>
+            <code class="language-scss">$color-blue: #007bff !default;
+$color-indigo: #6610f2 !default;
+$color-purple: #6f42c1 !default;
+$color-pink: #e83e8c !default;
+$color-red: #dc3545 !default;
+$color-orange: #fd7e14 !default;
+$color-yellow: #ffc107 !default;
+$color-green: #28a745 !default;
+$color-teal: #20c997 !default;
+$color-cyan: #17a2b8 !default;
+$color-white: #fff !default;
+$color-grey: #868e96 !default;
+$color-grey-dark: #343a40 !default;
+$color-primary: #007bff !default;
+$color-secondary: #868e96 !default;
+$color-success: #28a745 !default;
+$color-info: #17a2b8 !default;
+$color-warning: #ffc107 !default;
+$color-danger: #dc3545 !default;
+$color-light: #f8f9fa !default;
+$color-dark: #343a40 !default;
+$color-black: #000 !default;</code>
+</pre>
+      </div>
+      </div>
+      <h5>尺寸和定位</h5>
+      <div class="content">
+        <pre>
+            <code class="language-scss">$spacing-sizes: (
+    xs: 0,
+    sm: 0.25,
+    md: 0.5,
+    lg: 1,
+    xl: 1.5,
+    xxl: 3
+);</code>
+        </pre>
+        </div>
+      <h5>文本和排版</h5>
+      <div class="content">
+          <h1>h1标题</h1>
+          <h2>h2标题</h2>
+          <h3>h3标题</h3>
+          <h4>h4标题</h4>
+          <h5>h5标题</h5>
+          <h6>h6标题</h6>
+        <pre>
+            <code class="language-css">h1{
+    color: red;
+}</code></pre>
+      </div>
+      <h5>其他</h5>
+      <div class="content"></div>
+    </section>
+    <script src="./example/prism/prism.js"></script>
+  </body>
+</html>
