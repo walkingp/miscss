@@ -8,7 +8,7 @@
   </a>
 </p>
 
-> A CSS library
+> A tiny CSS library
 
 ### 🏠 [Homepage](https://miscss.migao.io)
 

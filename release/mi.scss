@@ -1,0 +1,452 @@
+/* reset */
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: gilroy-regular, Microsoft YaHei, Myriad Pro, Hiragino Sans GB,
+    Lucida Grande, sans-serif;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #333;
+  background-color: #fff;
+  font-size: 12px;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img {
+  border: 0;
+}
+em,
+strong,
+th {
+  font-style: normal;
+  font-weight: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+/* variables definition */
+$color-blue: #007bff !default;
+$color-indigo: #6610f2 !default;
+$color-purple: #6f42c1 !default;
+$color-pink: #e83e8c !default;
+$color-red: #dc3545 !default;
+$color-orange: #fd7e14 !default;
+$color-yellow: #ffc107 !default;
+$color-green: #28a745 !default;
+$color-teal: #20c997 !default;
+$color-cyan: #17a2b8 !default;
+$color-white: #fff !default;
+$color-grey: #868e96 !default;
+$color-grey-dark: #343a40 !default;
+$color-primary: #007bff !default;
+$color-secondary: #868e96 !default;
+$color-success: #28a745 !default;
+$color-info: #17a2b8 !default;
+$color-warning: #ffc107 !default;
+$color-danger: #dc3545 !default;
+$color-light: #f8f9fa !default;
+$color-dark: #343a40 !default;
+$color-black: #000 !default;
+
+$color-title: #17233d !default;
+$color-content: #515a6e !default;
+$color-disabled: #c5c8ce !default;
+
+$bg-grey: #f2f2f2 !default;
+$bg-white: #ffffff !default;
+$bg-black: #393d49 !default;
+
+$color-border: #dcdfe6 !default;
+
+$colors: (
+  "white": $color-white,
+  "black": $color-black,
+  "grey": $color-grey,
+  "green": $color-green,
+  "blue": $color-blue,
+  "yellow": $color-yellow,
+  "red": $color-red,
+  "title": $color-title,
+  "content": $color-content,
+  "disabled": $color-disabled
+) !default;
+
+$border-colors: (
+  "white": $color-white,
+  "black": $color-black,
+  "grey": $color-border,
+  "green": $color-green,
+  "blue": $color-blue,
+  "yellow": $color-yellow,
+  "red": $color-red
+) !default;
+
+$base-font-size: 1rem; // 14px
+
+$font-sizes: (
+  xs: 0.7143,
+  sm: 0.8571,
+  md: 0.9286,
+  lg: 1,
+  xl: 1.1429,
+  xxl: 1.2857
+);
+
+$flex-attr: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  stretch: stretch
+);
+
+$base-spacing-size: 1rem; // 14px
+$directions: (
+  "t": "top",
+  "b": "bottom",
+  "l": "left",
+  "r": "right"
+);
+$dimensions: (
+  "p": "padding",
+  "m": "margin"
+);
+$spacing-sizes: (
+  xs: 0,
+  sm: 0.25,
+  md: 0.5,
+  lg: 1,
+  xl: 1.5,
+  xxl: 3
+);
+
+$cursor-type: default, auto, crosshair, pointer, move, text, wait, help;
+$display-type: inherit, none, inline, inline-block, block, table, inline-table,
+  table-cell;
+$position-type: static, relative, absolute, fixed, sticky;
+$white-space-type: normal, nowrap, pre, pre-wrap, pre-line;
+
+/* main */
+@import "reset";
+@import "var";
+
+/* background-color 
+   text-color
+*/
+@each $key, $color in $colors {
+  .bg-#{$key} {
+    background-color: $color;
+  }
+  .text-#{key} {
+    color: $color;
+  }
+}
+
+/* text-overflow */
+.overflow-omit {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@for $line from 1 through 3 {
+  .overflow-#{$line} {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line;
+    overflow: hidden;
+  }
+}
+
+/* text-align */
+@each $var in (left, center, right) {
+  .text-#{$var} {
+    text-align: $var;
+  }
+}
+
+@each $type in $cursor-type {
+  .cursor-#{$type} {
+    cursor: $type;
+  }
+}
+
+/* font-size */
+@each $key, $size in $font-sizes {
+  .fs-#{$key} {
+    font-size: $size * $base-font-size;
+  }
+}
+
+/* white-space */
+@each $type in $white-space-type {
+  .text-#{$type} {
+    white-space: $type;
+  }
+}
+
+/* link */
+@each $name, $color in $colors {
+  .#{$name} {
+    color: $color;
+  }
+  .link-#{$name} {
+    color: $color;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover,
+    &:active,
+    &:focus {
+      color: darken($color, 10%);
+      text-decoration: underline;
+    }
+  }
+}
+$flex-direction: (
+  row: row,
+  row-reverse: row-reverse,
+  column: column,
+  column-reverse: column-reverse
+);
+/* display */
+@each $type in $display-type {
+  .d-#{$type} {
+    display: #{$type};
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/* visibility */
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/* float */
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.clear {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+/* position */
+@each $type in $position-type {
+  .#{$type} {
+    position: $type;
+  }
+}
+
+/* flex */
+.flex {
+  display: flex;
+  &.flex-wrap {
+    flex-wrap: wrap;
+  }
+  .flex-none {
+    flex: none;
+  }
+  .flex-auto {
+    flex: auto;
+  }
+  &.space-between {
+    justify-content: space-between;
+  }
+  &.space-around {
+    justify-content: space-around;
+  }
+  @each $key, $value in $flex-direction {
+    &.#{$key} {
+      flex-direction: $value;
+    }
+  }
+  @each $key, $value in $flex-attr {
+    &.align-#{$key} {
+      align-items: $value;
+    }
+    &.justify-#{$key} {
+      justify-content: $value;
+    }
+  }
+}
+
+/* padding margin */
+.margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+@each $dim in $dimensions {
+  @each $dir in $directions {
+    @each $size in $spacing-sizes {
+      // padding-top-xs
+      $result: nth($size, 2) * $base-spacing-size;
+      .#{nth($dim, 2)}-#{nth($dir, 2)}-#{nth($size, 1)} {
+        #{nth($dim, 2)}-#{nth($dir, 2)}: $result;
+      }
+    }
+  }
+
+  @each $size in $spacing-sizes {
+    // padding-xs
+    $result: nth($size, 2) * $base-spacing-size;
+    .#{nth($dim, 2)}-#{nth($size, 1)} {
+      #{nth($dim, 2)}: $result;
+    }
+  }
+  // padding-x-xs
+  @each $size in $spacing-sizes {
+    $result: nth($size, 2) * $base-spacing-size;
+    .#{nth($dim, 2)}-x-#{nth($size, 1)} {
+      #{nth($dim, 2)}-left: $result;
+      #{nth($dim, 2)}-right: $result;
+    }
+  }
+  // padding-y-xs
+  @each $size in $spacing-sizes {
+    $result: nth($size, 2) * $base-spacing-size;
+    .#{nth($dim, 2)}-y-#{nth($size, 1)} {
+      #{nth($dim, 2)}-top: $result;
+      #{nth($dim, 2)}-bottom: $result;
+    }
+  }
+}
+
+/* border */
+@each $dir in $directions {
+  @each $color in $border-colors {
+    .border-#{nth($dir, 2)}-#{nth($color,1)} {
+      border-#{nth($dir, 2)}: solid 1px #{nth($color, 2)};
+    }
+  }
+  .border-#{nth($dir, 2)} {
+    border-#{nth($dir, 2)}: solid 1px $color-border;
+  }
+}
+
+/* background-color */
+@each $name, $color in $colors {
+  .bg-#{$name} {
+    background-color: $color;
+  }
+}
+
+/* line-height */
+@for $i from 0 to 10 {
+  .lineheight_#{$i} {
+    line-height: #{$i}em;
+  }
+}
+
+/* h1-h6 */
+@for $i from 1 to 7 {
+  h#{$i},
+  .h#{$i} {
+    font-size: #{3- (2/5 * ($i - 1))}rem;
+  }
+}
