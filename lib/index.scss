@@ -73,7 +73,12 @@
     }
   }
 }
-
+$flex-direction: (
+  row: row,
+  row-reverse: row-reverse,
+  column: column,
+  column-reverse: column-reverse
+);
 /* display */
 @each $type in $display-type {
   .d-#{$type} {
@@ -126,12 +131,6 @@
 /* flex */
 .flex {
   display: flex;
-  &.row {
-    flex-direction: row;
-  }
-  &.column {
-    flex-direction: column;
-  }
   &.flex-wrap {
     flex-wrap: wrap;
   }
@@ -146,6 +145,11 @@
   }
   &.space-around {
     justify-content: space-around;
+  }
+  @each $key, $value in $flex-direction {
+    &.#{$key} {
+      flex-direction: $value;
+    }
   }
   @each $key, $value in $flex-attr {
     &.align-#{$key} {
