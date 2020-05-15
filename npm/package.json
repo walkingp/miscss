@@ -1,0 +1,19 @@
+{
+  "name": "miscss-cli",
+  "version": "1.0.0",
+  "description": "A tiny CSS base library based on SCSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "miscss-cli init"
+  },
+  "author": "walkingp",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^5.0.0",
+    "fs": "^0.0.1-security",
+    "request": "^2.88.2"
+  },
+  "bin": {
+    "miscss": "index.js"
+  }
+}

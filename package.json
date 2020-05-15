@@ -13,9 +13,11 @@
     "type": "git",
     "url": "git+https://github.com/walkingp/miscss.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "CSS"
+  ],
+  "author": "walkingp",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/walkingp/miscss/issues"
   },

@@ -8,7 +8,7 @@
   </a>
 </p>
 
-> A tiny CSS library
+> A CSS library
 
 ### 🏠 [Homepage](https://miscss.migao.io)
 
@@ -17,19 +17,20 @@
 ## Install
 
 ```sh
-npm i miscss
+miscss-cli init
 ```
 
 ## Author
 
 👤 **walkingp**
 
-* Website: https://migao.io
-* Github: [@walkingp](https://github.com/walkingp)
+- Website: https://migao.io
+- Github: [@walkingp](https://github.com/walkingp)
 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
 
-***
+---
+
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
