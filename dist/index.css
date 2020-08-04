@@ -551,12 +551,6 @@ textarea {
 .flex {
   display: flex;
 }
-.flex.row {
-  flex-direction: row;
-}
-.flex.column {
-  flex-direction: column;
-}
 .flex.flex-wrap {
   flex-wrap: wrap;
 }
@@ -571,6 +565,18 @@ textarea {
 }
 .flex.space-around {
   justify-content: space-around;
+}
+.flex.row {
+  flex-direction: row;
+}
+.flex.row-reverse {
+  flex-direction: row-reverse;
+}
+.flex.column {
+  flex-direction: column;
+}
+.flex.column-reverse {
+  flex-direction: column-reverse;
 }
 .flex.align-start {
   align-items: flex-start;
