@@ -123,7 +123,7 @@ textarea {
   background-color: #fff;
 }
 
-.text-key {
+.text-white {
   color: #fff;
 }
 
@@ -131,7 +131,7 @@ textarea {
   background-color: #000;
 }
 
-.text-key {
+.text-black {
   color: #000;
 }
 
@@ -139,7 +139,7 @@ textarea {
   background-color: #868e96;
 }
 
-.text-key {
+.text-grey {
   color: #868e96;
 }
 
@@ -147,7 +147,7 @@ textarea {
   background-color: #28a745;
 }
 
-.text-key {
+.text-green {
   color: #28a745;
 }
 
@@ -155,7 +155,7 @@ textarea {
   background-color: #007bff;
 }
 
-.text-key {
+.text-blue {
   color: #007bff;
 }
 
@@ -163,7 +163,7 @@ textarea {
   background-color: #ffc107;
 }
 
-.text-key {
+.text-yellow {
   color: #ffc107;
 }
 
@@ -171,7 +171,7 @@ textarea {
   background-color: #dc3545;
 }
 
-.text-key {
+.text-red {
   color: #dc3545;
 }
 
@@ -179,7 +179,7 @@ textarea {
   background-color: #17233d;
 }
 
-.text-key {
+.text-title {
   color: #17233d;
 }
 
@@ -187,7 +187,7 @@ textarea {
   background-color: #515a6e;
 }
 
-.text-key {
+.text-content {
   color: #515a6e;
 }
 
@@ -195,7 +195,7 @@ textarea {
   background-color: #c5c8ce;
 }
 
-.text-key {
+.text-disabled {
   color: #c5c8ce;
 }
 
