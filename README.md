@@ -24,7 +24,7 @@ npm i miscss
 
 👤 **walkingp**
 
-* Website: https://migao.io
+* Website: https://migao.vercel.app
 * Github: [@walkingp](https://github.com/walkingp)
 
 ## Show your support
