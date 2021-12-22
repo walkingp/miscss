@@ -10,9 +10,9 @@
 
 > A CSS library
 
-### 🏠 [Homepage](https://miscss.migao.io)
+### 🏠 [Homepage](https://walkingp.github.io/miscss/)
 
-### ✨ [Demo](https://miscss.migao.io)
+### ✨ [Demo](https://walkingp.github.io/miscss/)
 
 ## Install
 
